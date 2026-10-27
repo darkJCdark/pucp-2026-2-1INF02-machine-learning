@@ -1,0 +1,640 @@
+# ML S10
+
+  Meeting started: 27/10/2026, 5:46:08 p. m.
+  Duration: 118 minutes
+  Participants: Speaker 1, Speaker 2, Speaker 3
+
+  [View original transcript](https://app.tactiq.io/api/2/u/m/r/MdF3BrEtPXNa9XokyBa4?o=txt)
+
+    
+
+  
+
+  
+
+  ## Transcript
+
+  00:00 Speaker 2: Bueno, empezamos con la segunda unidad. Vamos a hablar con todo lo que
+00:05 Speaker 1: tiene que ver con la presentación.
+00:08 Speaker 2: Antes de entrar al tema, vamos a hacer un breve repaso de algunos consejos que ya debieron ver a lo largo de ellos.
+00:15 Speaker 1: Toda la primera
+00:16 Speaker 2: parte vieron supervisado, ¿cierto? Ok, dentro del supervisado... Pero aquí había una frutada de 3 tipos de la agencia.
+00:33 Speaker 3: Regresión y regresión. Vale.
+00:35 Speaker 2: Típicamente, clasificación y
+00:39 Speaker 1: regresión.
+00:40 Speaker 2: ¿Vale? Típicamente, clasificación y regresión. Cada uno con sus perspectivas. ¿Y con respuestas a las métricas de la creación?
+01:09 Speaker 1: También se puede usar la creación.
+01:17 Speaker 2: El mínimo es por error, etc. Listo, vayamos con los datos, porque todo lo que tiene que ver con el tema del día de hoy, tiene que ver con los datos. Típicamente los datos, en aprendizaje supervisado, le hemos denotado con esto, ¿no? X toma... Listo, una vez que, bueno, voy a poner aquí al modelo, le pasemos todos nuestros datos, ¿qué nos da como resultado?
+01:50 Speaker 3: Y es una predicción. ¿Y? Y no.
+01:54 Speaker 2: Atmos, ¿cierto? Y obviamente, utilizando el valor real, el valor predicho, calculamos nuestras métricas de expresión que se han detendido desde lo que vayan a ser.
+02:03 Speaker 1: Listo.
+02:04 Speaker 2: Vamos a estar típicamente supervisados. Esta era la estructura de los datos, ¿no? Las X y las Y. Las Y también llamadas como...
+02:12 Speaker 3: Target, ¿no? Target.
+02:16 Speaker 2: Ok, variable adjetivo, etiqueta, ¿vale?
+02:21 Speaker 1: Listo.
+02:23 Speaker 2: Ok, eso ya lo hemos visto. Entonces, a partir del día de hoy nos olvidamos de... Solo vamos a trabajar con las ejes, con las fichas, con las características. Bueno, básicamente en la segunda unidad, uno de los principales objetivos es que nuestros modelos aprendan. A reconocer patrones. ¿Qué tipo de aplicación creen que genere muchos datos? Big Data. Muchos, no sé, pero no hay espectador de ayuda. ¿Puedes hacer los bancos?
+03:23 Speaker 3: ¿Para qué cosa? Que
+03:26 Speaker 2: generan solamente muchos datos, esa es la idea. ¿Generan muchos datos? Sí. Por ejemplo, la banca, ¿no? Sí. Cada segundo estamos haciendo transacciones, ellos son datos. Muchos datos. Otros, las redes sociales, creo, ¿no?
+03:39 Speaker 3: Muchos datos. Otro, una escala. Una escala.
+03:43 Speaker 2: ¿Escala? Escala. Ah, los sistemas escala, también, que tienen que ver con Internet de las cosas. También ahí podemos poner internet en las cosas. Entonces, diariamente generamos muchos, muchos datos, básicamente indicados, ¿no? ¿Qué porcentaje cree que de esa data ya está etiquetada, listo para resolver algún problema mediante regresión o clasificación? ¿Espera la mitad? ¿Un 25%? Sí, aproximadamente solo el 5% dentro de esa data está etiquetada. Obviamente correctamente etiquetada. Entonces, si está correctamente etiquetada, puede hacer revisión, la explicación, lo que tenga que hacer. Entonces, imaginen, aproximadamente el 95% de la data está etiquetada. Y si está etiquetada, no la usamos. No, justamente para eso viene o está en otras materias de aprendizaje no supervisado. Entonces, ¿qué hacen estos tipos de modelos? Simplemente encuentran o identifican patrones. Identifican patrones o características que los datos, las luvas X, tienen en común. No sé, por ejemplo, ¿podemos identificar grupos de datos o de características? Sí, es la principal función. A partir de cuando nosotros le damos esta X, nos va a encontrar patrones. Va a tratar de agrupar a todos esos datos de acuerdo a ciertas características o propiedades que tenga muchos datos. Podemos visualizar de manera compacta muchos datos con muchas características.
+05:31 Speaker 1: ¿Qué tiene?
+05:34 Speaker 2: Patrón de los dos. Podemos visualizar de manera compacta
+05:37 Speaker 1: muchos datos con muchas características.
+05:43 Speaker 2: ¿Qué han hecho? ¿Qué maneras ya vieron en la sesión anterior? La reducción de la dimensional. ¿A eso hace referencia? ¿Otro? ¿A parte del PSA?
+06:05 Speaker 1: autoencoders
+06:06 Speaker 3: es antiguo también sirve
+06:12 Speaker 2: para reducir la dimensionalidad
+06:13 Speaker 3: otro modelo los autoencoders
+06:49 Speaker 2: ¿Cuál será la mejor manera de segmentar un grupo? Bueno, ni siquiera de clientes, en cualquier escenario. Por ejemplo, vayamos nuevamente al escenario bancario y financiero. Tenemos clientes, obviamente. ¿Cómo o qué criterio utilizaríamos para mostrar o generar nuevos productos para mis clientes? ¿Cómo genero nuevos productos para mis clientes? Primero, identificando qué necesidad tienen sectores o grupos de los clientes dentro del banco. De repente a algún sector les interesa bastante el tema de préstamos. Entonces, analizando eso, yo podría encontrar, oye, este grupo de clientes necesita más alguna aplicación, alguna herramienta que esté relacionada con los préstamos. ¿Por qué? Porque hacen los préstamos, para la hacienda emprendimiento, etc. O para campañas de marketing, ¿no? De forma analogada. ¿Cuáles son los resultados más relevantes de una búsqueda? Cuando nosotros apliquemos los distintos algoritmos de clustering en nuestros datos, lo único que nos va a retornar esos modelos, esos algoritmos, son grupos, son clustering.
+08:05 Speaker 1: Entonces, ya es un
+08:09 Speaker 2: poco difícil, bueno, aplicar los modelos no es difícil. ¿Dónde está lo complicado en este escenario? resultados. ¿Cómo nosotros podemos interpretar adecuadamente? ¿Por qué al aplicar algún algoritmo de clase, aquí tengo un grupo, por aquí tengo otro grupo, ¿por qué los agrupar así? Y después de eso, tener la interpretación lógica, oye, ¿qué tienen estos clientes,
+08:40 Speaker 1: por ejemplo? ¿Y qué tienen estos
+08:42 Speaker 2: clientes en común? ¿Y qué no sé? ¿Quién se diferencia de un grupo de clientes con respecto a otro? Entonces, en este tipo de enfoque de no supervisar, pues, típicamente el reto está ahí, en interpretar, porque tenemos datos. Aplicar el modelo es tan complejo. El modelo nos va a dar o va a identificar patrones, grupos de clases. Después de eso, localizar la creación. En otro caso también hay estrategias, algunas métricas que nos pueden ayudar. ¿Listo? Aquí tenemos un primer resumen. Si hablamos de no supervisador, clasering, reducción de anomalías, reducción de la dimensionalidad y aprendizaje de reglas de la asociación. En esta sesión nos vamos a enfocar en toda esta primera parte. Vamos a ver cómo es que funciona el algoritmo de camines, cómo es que funciona el algoritmo de clustering jerárquico, cómo es que funcione el algoritmo de EBSCAM y ahí les voy a dar algunas pautas del HDEBSCAM.
+10:01 Speaker 3: Yo me colado.
+10:03 Speaker 2: Yo
+10:05 Speaker 3: me
+10:12 Speaker 1: colado. Yo
+10:16 Speaker 2: me
+10:24 Speaker 1: colado.
+11:21 Speaker 2: Clustering, por definición, es un modelo de inteligencia artificial destinado a encontrar grupos o agrupamientos. ¿Cómo es que se forman los grupos dentro de los clústeres? A la simple vista, ¿cuántos clúster se va a llegar?
+12:15 Speaker 1: De tres. De tres, ¿no?
+12:20 Speaker 2: Asumamos que sea tres. Voy a hacer un poquito con la definición. Voy a decir para traer un clúster. Nos va a grupar. Cada uno de estos elementos va a pertenecer a un determinado clúster. ¿Y por qué los han rupado de esa forma? ¿Qué hace internamente? ¿Qué crees que se está haciendo?
+12:54 Speaker 3: Tal vez se está tratando de describir los datos. Tal vez hay un comportamiento para un grupo en particular que de alguna manera los hace que estén juntos,
+13:03 Speaker 2: ¿no? Exactamente. Si esos datos están juntos dentro de nuestros clases, es que estos puntos o características o features tienen cosas en común. ¿Vale? Tienen propiedades en común. Tienen características en común. Y tomando en consideración las características, vamos a formar los dos diferentes
+13:22 Speaker 1: clases.
+13:25 Speaker 2: ¿De acuerdo? Vale. Esa es la definición intuitiva de qué cosa es un clásico. Vamos a la definición formal. sea de nuestro conjunto de datos. Y vamos a tener otro conjunto C. Este conjunto C para nosotros nos va a denotar los centroides de cada clase. Por ejemplo, aquí. Los centroides pueden estar aquí. Y ojo, el número de centrales también está totalmente limitado de acuerdo con esas definiciones. Podríamos tener, bueno, típicamente desde 2 hasta cada centrales o cada grupos. Entonces, cuando se formen estos grupos, aquí está, para seguir la definición, este es G1, este para nosotros G2, y este para nosotros es
+14:42 Speaker 1: G3.
+14:44 Speaker 2: Ya hemos aplicado nuestro número de clases y tenemos esos tres grupos. Entonces, adicionalmente, tienen que cumplir estas condiciones. ¿Qué nos está diciendo aquí? Que ningún clúster puede estar vacío. O sea, si hay un clúster, como mínimo va a tener un elemento.
+15:07 Speaker 3: Que la unión de todos los clústeres me debe dar todo el conjunto, me imagino. Exactamente. La población.
+15:13 Speaker 2: Todo el conjunto, toda la población. Entonces, nosotros unimos los grupos, nos debe dar...
+15:27 Speaker 1: Gracias. ¿Cuál?
+15:43 Speaker 2: ¿Este simbolito? Sí. Sí, la excepción.
+15:46 Speaker 1: La excepción entre ellos. Y que se... Ok, sorry, aquí
+15:53 Speaker 2: hubo un error. Eso debería ser que... Sorry, lo voy a expresar. La excepción.
+16:00 Speaker 1: Ahora sí.
+16:11 Speaker 2: ¿Qué quiere decir? Gracias. Este elemento se parece a este y a su vez a este y a su vez a este. Por ende, forma un grupo. ¿Cómo medimos esto? Entonces, para eso existen métricas. Para evaluar justamente si dos o más elementos son similares o distintos. La más conocida creo que es la
+17:20 Speaker 1: distancia
+17:23 Speaker 2: eusiniana.
+17:25 Speaker 1: También tenemos la de Manhattan
+17:26 Speaker 2: y la de Minkowski. Y adicionalmente, aquí nos faltan las distancias... ¿Cómo se calcula la fórmula de la similitud de coseno? ¿Qué hemos hecho anteriormente?
+17:52 Speaker 3: Los embeddings, ¿no?
+17:55 Speaker 1: ¿Igual
+17:56 Speaker 2: a...?
+17:56 Speaker 3: Producto escalar de embeddings.
+17:59 Speaker 2: Supongo que los vectores son A y B. ¿Está bien?
+18:11 Speaker 1: Listo.
+18:12 Speaker 2: ¿Cómo se llama esta métrica? Similitud coseno. ¿Vale? Similitud coseno. Ojo, porque estamos en eso, hay un poquito de confusión ahí entre similitud y coseno. Bueno, resumen, entre similitud y distancia. entonces aquí tengo la similitud no es distancia ¿cómo convertimos eso a distancia?
+18:36 Speaker 3: por un escalar la proyección Ah, 1 menos. Ah, esa es la distancia coseno. 1 menos
+18:50 Speaker 2: la distancia coseno. Ahí estoy haciendo esa transformación a distancia. Entonces, para determinar qué tan parecidos son estos elementos vinculados, simplemente medimos cosas. No,
+19:56 Speaker 1: el cargador
+19:58 Speaker 3: lo está buscando.
+20:00 Speaker 1: Lo encontré.
+20:03 Speaker 2: Entonces, creo que esto todos lo conocemos, ¿no? Hoy día, todos los señores, solo vamos a utilizar la distancia. Gracias. Vamos. Este es
+20:26 Speaker 1: el
+20:30 Speaker 2: camisa en funcionamiento. Veamos qué está haciendo internamente y vamos a utilizar esa lógica para abordar todo lo demás. ¿Todavía está en proceso? ¿O está haciendo algo?
+20:52 Speaker 3: Está buscando el centroide.
+20:54 Speaker 2: Analicemos eso. Veamos. Vamos a menorizar cosas, ¿no? Tomamos el ejemplo para que nosotros mismos deducamos el algodín. ¿Cómo es que está funcionando? ¿Qué hace el camiseta?
+21:09 Speaker 3: La distancia más corta. Hay
+21:11 Speaker 2: algo verde, ¿no? Hay cosas verdes por ahí. Aquí, no sé, podría decir que está siendo calculado
+21:17 Speaker 3: en distancias. La distancia más corta.
+21:23 Speaker 2: ¿Y por qué este punto verde no calcula con este? No sé. Podríamos observar eso también. Y después ese punto inicial verde se mueve. Se vuelve a hacer esos cálculos. Se hacen las líneas. Se vuelve a mover.
+21:43 Speaker 1: Se vuelve a mover.
+21:51 Speaker 2: Listo. Vayamos, en orden. ¿Qué creen que se representan esos puntitos de órtex? Exactamente, ¿ya? K sería el parámetro, ¿no? Para el camino. Pero de forma general estamos definiendo el número de clases. Exactamente. Está estrechamente relacionado con los centroides. Observando la imagen, ¿cómo se han inicializado los centroides? Cualquier punto en el espacio donde están nuestros datos. O ha elegido algún punto de los datos como centroide. No sé, yo creo que es el
+22:33 Speaker 1: centroide, es el centroide. Ha elegido.
+22:35 Speaker 2: Ha elegido, ¿ya?
+22:37 Speaker 1: Esta es una versión mejorada del camin.
+22:40 Speaker 2: Exactamente, muy bien. Este es el camin más normal. ¿Ya? El camin tradicional. Ok, hace eso, ¿no? Ah, me presenté, me gusta por aquí, por aquí y por aquí. ¿Totalmente? ¿Area todo? Entonces. Una vez que se definen los centroides, ¿qué está haciendo?
+23:05 Speaker 1: Calcula las distancias.
+23:09 Speaker 2: Exactamente. Antes, sí hace eso, pero primero hace aquello. Calcula las distancias, ¿no? A partir de ese centroide, estoy calculando las distancias. ¿De dónde a dónde? ¿Del centroide a cada punto o del punto a los centroides? ¿Te acuerdas la figurita? Si haríamos eso, si tú me dices de los centroides a los puntos, ¿por qué no calcula de esos centroides?
+23:41 Speaker 1: Entonces, lo
+23:50 Speaker 2: que está haciendo es lo siguiente, ¿no? Coge un punto, ahí está un punto cualquiera, y voy a decir, oye, ese punto... Imagina, bueno, no imagina, esas líquidas son los centroides. Está haciendo esto, ¿no? ¿Cuál es el centroide más cercano? Este punto azul. ¿Qué es lo cierto? Listo, entonces ese punto azul. Bueno, voy a poner así. Pertenece al que es lo cierto. Listo, después coger otro punto. Y hace ese mismo cálculo, ¿no? A todos los centroides. A todos los centroides, a todos los centroides. Y después dirán, oh, ¿está más próximo a qué centroide? A este. Entonces este siguiente punto pertenece a G1.
+24:33 Speaker 1: ¿Lo calcula en sí a todos?
+24:35 Speaker 2: Sí, calcula en todos. ¿Por qué crees que tiene que calcular en todos?
+24:41 Speaker 1: Para evaluar cuál es el punto. Para
+24:43 Speaker 2: evaluar cuál está más próximo al centroide. Si no, que hago a todos, me queda medio, ¿no? Listo. Ok, ya hemos hecho el primer cálculo, ¿no? Ya hemos identificado qué puntos pertenecen a qué centroide. Y obviamente el centroide ya es un grupo, es un plan. Después, ¿qué hace? Ahora sí.
+25:03 Speaker 1: Los puntos.
+25:05 Speaker 2: ¿Qué puntos? los puntos que pertenecen al mismo clúster las utilizo ¿para qué? para
+25:16 Speaker 3: calcular el nuevo
+25:18 Speaker 2: centroide ¿y qué estamos haciendo ahí? el promedio simplemente estamos promediando Entonces pasamos a este punto, es X,Y, 1, 1, el otro punto de ahí será X, 2, Y, 2, y sucesivamente sumamos y promediamos. ¿Entre cuánto? Obviamente entre el número de puntos que tienen. ¿Ya está? Y se actualiza. ¿Y se actualiza siempre? Después, ¿qué se hace? Se ve aquí. Ya está. Ese se actualiza. ¿Vale? Así de simple. Ese se actualiza. normales de lo que ya nosotros hemos denunciado.
+26:17 Speaker 1: Listo.
+26:20 Speaker 2: Y ahora los puntos están resaltados, son los centrógenos. Los centrógenos pequeñitos son los elementos que pertenecen a
+26:28 Speaker 1: cada clase. ¿Qué más tenemos ahí?
+26:35 Speaker 2: Bueno, aquí están cumpliendo las propiedades que ya hemos visto. Cada punto de los datos es asignado exactamente a un clasto. Entonces, un elemento no puede pertenecer a los clastos. Si hacemos la intersección de estos dos grupos, tiene que ser nulo,
+26:51 Speaker 1: ¿no? ¿Qué más?
+26:56 Speaker 2: Cada clasto queda definido por el valor medio de nuestro centro. Y finalmente, cada punto de los datos pertenece a clase cuya central está más cercano. Listo, lo que acabamos de decir. Pregunto, ¿cuántas veces crees que deberíamos hacer esa iteración? ¿O cuál sería el criterio de detener el algoritmo de clase en el que podamos ver? Bueno, ¿no? Cuando ya... Si el central ya no se actualiza de forma...
+27:34 Speaker 1: De
+27:36 Speaker 2: una distancia muy grande de una interacción a otra, la podemos detener. Ok. Entonces, justamente...
+27:48 Speaker 1: Pásenlo.
+27:50 Speaker 2: Sorry, no hay zoom. Ok, entonces es un criterio para determinar. O directamente podemos decir, no, yo quiero iterar el algoritmo cien veces. No, no queramos cien veces.
+28:08 Speaker 1: Sigue.
+28:09 Speaker 2: Sigue nada. Ok, no solo el porcentroides. Tain del algoritmo. Decidido que mi algoritmo se detiene cuando el centroide ya no se mueve más. ¿Qué hace? Que cada vez que ejecute el algoritmo, posiblemente no salgo tu resultado. Obviamente muy similar, ¿no? No va a salir totalmente distinto.
+29:45 Speaker 3: Por el inicio. Exactamente,
+29:47 Speaker 2: ya. Por la inicialización.
+29:50 Speaker 1: Y también, si no me equivoco, porque no puede llevar unos cubos locales.
+29:56 Speaker 2: Exactamente. Esa es mi idea que debe llegar. Cada vez que ejecutamos nuestro algoritmo de clustering, bueno, pero en general, ¿no? El tipo de defensaje automático. Hay veces sí va a llegar a un óptimo global, pero muchas veces no. Se va a estancar en un óptimo local. Entonces va a ocurrir eso. Depende siempre un poquito de nuestros datos. En código, yo quiero que siempre me salga el mismo resultado. ¿Qué haces en código?
+30:34 Speaker 3: Fijar los puntos iniciales.
+30:38 Speaker 1: Bueno,
+30:38 Speaker 2: podrías poner fijo, pero otra idea aparte de poner fijo los puntos. Ah, semillas. Podrías inicializar tus semillas también. Listo. Esta es una buena estrategia. Cuando ustedes quieren evaluar modelos, inicializar las semillas, es una buena estrategia. Lo que se entiende, ¿no? Lo que hemos visto es exactamente lo que acabamos de deducir nosotros. El centroide, el manualide... Aquí está la función de costo.
+31:11 Speaker 1: ¿Ya? Esa es la función de costo. que
+31:19 Speaker 2: implica la función de
+31:21 Speaker 1: costo.
+31:23 Speaker 2: Además, eso me sirve a detener el algoritmo.
+31:31 Speaker 1: Me
+31:55 Speaker 2: gusta minimizar la varianza intracluster. ¿Se entiende la palabra de intracluster? Intracluster. Exactamente. Este detalle. En resumen, que los elementos que pertenecen a un cluster, están juntitos, ¿no? Que no estén dispersos. Porque si estarían dispersos, no se podía dar esto, ¿no? Este puntito negro que está aquí, si están dispersos, no se está en el medio. ¿Y a dónde pertenecen? Entonces, eso ya genera que nuestra función de costo no converja adecuadamente. Entonces, eso es en resumen lo que hace nuestro métrico, nuestra función de costo. Que cada uno de los elementos que pertenezca a un determinado clúster, esté lo más compacto posible. Esa es la idea de la varianza infracción. Bueno, eso se calcula para cada uno de los grupos, ahí tenemos nuevamente la sumatoria, de la sumatoria de las distancias de
+32:56 Speaker 1: un lineal. Solo para recordar, ¿qué
+33:00 Speaker 2: me representa este ítero?
+33:02 Speaker 3: La media.
+33:06 Speaker 2: Centroides. ¿X?
+33:08 Speaker 1: La observación. ¿Por qué punto debe estar? Listo.
+33:20 Speaker 2: Ya, lo empezamos. Ah, algunas observaciones del Camines. ¿Qué dos ventajas tendrá el Camines? Sí. ¿O funcionará o estará excelente para todo? En cualquier escenario, o en cualquier tipo de datos.
+33:53 Speaker 1: Bueno, si hay una alta dimensionariedad, la razón es que falla.
+33:57 Speaker 2: ¿Podría fallar? ¿Otra? ¿Qué pasa con los off-layers?
+34:06 Speaker 1: Es como el KNAB que hace que tome una mala
+34:11 Speaker 3: carita.
+34:13 Speaker 1: Con este no serían malos que los cartones. Porque un off-layer puede mover esa entrega demasiado. Exactamente.
+34:19 Speaker 2: Si nuestros datos tienen off-layer, no va a ser una buena idea. ¿Qué
+34:27 Speaker 1: más?
+34:32 Speaker 2: Veamos, ¿en qué caso el camisón funcionaría adecuadamente? Bueno, ahí hay algunas ideas.
+35:27 Speaker 3: la cantidad de datos sería un clúster
+35:30 Speaker 1: para cada punto o
+35:35 Speaker 2: el otro escenario todo el conjunto de datos un único clúster son unas de las dificultades que podríamos obtener y hay uno particularmente a mi que no me gusta ¿Cuál será la forma adecuada de
+35:57 Speaker 1: elegir el caso?
+36:00 Speaker 2: ¿Qué puede decir? Yo quiero dos, yo quiero tres, cuatro. Más que métrica hay técnicas, parece, ¿no? Y eso es una de las ventajas de camiones. Porque si tú quieres decir, oye, encuérdame grupos, de antemano tienes que decirle cuántos grupos quieres que te encuentre. Y si ese cálculo nosotros no lo hacemos de forma correcta, pues nuestros resultados van a estar sentados, ¿no? Van a estar sentados. Entonces, para eso existen técnicas, ¿no? Para elegir a este campo. Particularmente a mí, es una de las desventajas que quieren salir. Pero parece que existen análisis
+36:45 Speaker 1: de
+36:46 Speaker 2: cibetas. Esta es nuestra primera métrica. Aquí la vamos a utilizar para encontrar el mejor valor de K. Pero posteriormente, en la parte final, la vamos a utilizar para evaluar la calidad de nuestras clases. ¿Qué nos dice el análisis de cibeta? gráficamente vamos a determinar o identificar un posible número Primero apunte aquí, por favor. Recuerden, si hablamos de métricas, siempre lo más importante de la métrica es la interpretación. Para tener una correcta interpretación, yo necesito saber cuál es el mínimo valor, o sea, si esa métrica está acotada o no está acotada, etc. Por ejemplo, lo dirás, el R2 es una métrica acotada o no acotada. O sea, está limitada. ¿Valor mínimo? Uno, ¿cuánto es mejor? ¿Cuándo está cercano a 1? Entonces,
+37:59 Speaker 1: aquí ocurre lo mismo.
+38:00 Speaker 2: La métrica de la silueta está cortada desde menos 1 a 1. ¿Cuándo es mejor? Cuando está próximo a 1. ¿Está muy cercano a 0? Vamos a tener este escenario. Si esta métrica tiene que ser cercano a 0, es que hay un punto que no se sabe si pertenece a este plástico o a otro plástico. De la frontera. Visualmente es la interpretación. Y menos uno. Pues que mi clúster
+38:31 Speaker 1: no
+38:33 Speaker 2: está agrupando por el planeta. Vamos con el análisis. Ustedes me dirán. Ahí tienen cuatro ejemplos de la aplicación de SilverStore. ¿Con qué valor de acá creen que esté funcionando mejor? Hay dos, tres, cuatro y cinco. ¿Por qué con 4?
+39:01 Speaker 1: Para tomar
+39:02 Speaker 2: esa decisión, ¿estás observando más esta parte de la figura o esta parte? ¿Qué nivel debemos observar esto? Sí, porque este es el resultado de hacer el análisis de la silueta. ¿Te da como resultado? Si lo aplicas, obviamente vas a obtener el
+39:22 Speaker 1: resultado.
+39:23 Speaker 2: Entonces, ¿qué diferencia tiene esta imagen? visualmente aparte de la cantidad no, acá hay 2
+39:33 Speaker 1: y
+39:35 Speaker 2: acá hay 4 Observemos las formas. Aquí está, es simétrico. No, aquí, un poco mejor, ¿no? Más o menos. Y además, miren, acá hay un límite. Es donde casi todos superan este límite aquí. Este se pasa mucho. Para este escenario, este no llega. Y además,
+39:55 Speaker 1: exactamente,
+39:58 Speaker 2: tiene X5. Y con 5, ya no, también hace. no mejora.
+40:06 Speaker 1: Entonces,
+40:06 Speaker 2: cuando nosotros apliquemos el Chile Fscore, vamos a tener el resultado. El resumen que estamos haciendo, estamos aplicando el algoritmo de Clustering, diciéndole, acá es 2, ejecute, no hagan el resultado. acá es 3, ejecute, no hagan el resultado. Y al final nosotros, nos vamos a quedar como mejor, y vamos a volver a ejecutar el experimento en los casos. Entonces, por eso también es muy importante. no es una buena alternativa. Pero existe otro método que no se le haya presentado más. ¿Alguien recuerde ese método? Aparte de las cifras, para que me determine el posible mejor número de clústeres. Es el método de visualmente, aquí en el eje que nos va a representar
+41:12 Speaker 1: el número de clústeres.
+41:22 Speaker 2: una señal donde nosotros visualmente podamos observar cuál es el mejor valor para acá. Entonces, ahí tienen también que son escenas de positivos. En el laboratorio, si lo van a ver, el método de hoy, para determinar el método número para acá. Interacción de este algoritmo. El 5-2 va a funcionar, vamos a tener resultados. Pero perdón, tengo un poquito más, además aquí, ¿no? Ok, 5-7. Y el
+43:02 Speaker 3: 2-3-2-8.
+43:08 Speaker 2: Listo, ahorita los puntos están etiquetados, ese es el 1, el 8, el 4, el 5 y el 6 y el 6.
+43:14 Speaker 1: Listo,
+43:15 Speaker 2: tenemos los entrenadores. Paso 1.
+43:22 Speaker 1: Ok,
+43:23 Speaker 2: váyanos en orden. Visualmente ya está simple, ¿no?
+43:27 Speaker 1: Gracias a los amigos. Gracias. Ya,
+43:30 Speaker 2: el punto A1. ¿A qué centro hay de cortemestria?
+43:39 Speaker 3: El negro.
+43:47 Speaker 1: ¿Qué
+43:48 Speaker 3: es el rojo? El rojo.
+43:59 Speaker 1: Azul.
+44:00 Speaker 2: A uno. ¿A quién pertenece? U3.
+44:04 Speaker 3: A negrito, a negrito.
+44:07 Speaker 2: ¿Cuál es la distancia? Dos. A dos.
+44:15 Speaker 3: ¡Vamos!
+44:33 Speaker 2: ¿A2? ¿Dónde está el A2? ¿No está el A2? A 3 es este, ¿a cuál
+45:06 Speaker 3: pertenece?
+45:18 Speaker 2: ¿A un o dos? ¿Distancia? Tres
+45:23 Speaker 3: raíces.
+45:28 Speaker 2: ¿A cuatro?
+45:34 Speaker 3: No, no.
+45:36 Speaker 2: ¿El centro ya está más cerca a cuatro? ¿Este es A4?
+47:15 Speaker 3: A7, A1, 3, 4 unidades. Cuatro. ¿Cuatro? Sí.
+47:31 Speaker 2: Hay un
+47:33 Speaker 1: empate con tres y dos. ¿Ocho? Sí.
+47:41 Speaker 2: ¿Quién llamó? Bueno, dame tu solución. Tú dime a tal y por qué.
+47:45 Speaker 1: Raíz de cinco sería la distancia,
+47:47 Speaker 2: pero... Ya, a la distancia es raíz de cinco. ¿A cuál le pones?
+47:57 Speaker 1: Depende del criterio, ¿no? El primero que... Sí,
+48:02 Speaker 2: puede ser al primero o al último. ¿Vale? Al primero, donde se hay empate, al primero o al último, si quieres de forma aleatoria, una cualquiera. Nudos. Listo.
+48:11 Speaker 1: Nudos.
+48:13 Speaker 2: Ya está. Calculamos la resistencia. ¿No? Ya sabemos. Voy a poner aquí.
+48:20 Speaker 1: ¿No sería mejor elegir otro que no tiene nada? No tiene mucho.
+48:25 Speaker 2: No, si tiene muchos, si tiene muchos. Tenemos que respetar el algoritmo, en la menor distancia.
+48:31 Speaker 1: Pero, ¿está a la igual distancia? Ah,
+48:36 Speaker 2: bueno, también podría ser otro criterio, ¿no? Agrega ya el conjunto que tenga menos elementos. Sí, es el número más interesante. Listo, entonces, voy a poner. ¿A uno qué elementos pertenecen?
+48:54 Speaker 1: A 2, así.
+48:56 Speaker 2: A 2, así. Y listo. Vamos a volar. Vamos a ver las opciones. 1, 2,
+49:03 Speaker 1: 3, 4, 5,
+49:06 Speaker 2: 6, 7, 8, 9,
+49:09 Speaker 1: 10, 11, 12, 13, 14, 15, 16, 17, 18,
+49:15 Speaker 2: 19, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, A ver, le dice, por favor. Ahí sale 6. Ahí
+50:48 Speaker 3: sale 6.
+50:52 Speaker 1: 6,6?
+50:57 Speaker 2: Sí, 6. 6,5 y?
+50:59 Speaker 1: No, 6,6. Aquí es 6,6? No, no, la X igual a 6. Claro, la X igual a 6. La X igual a 6. Así
+51:07 Speaker 3: es ahí.
+51:10 Speaker 2: 6,6. Así? Gracias.
+51:16 Speaker 1: El
+51:18 Speaker 3: más difícil.
+51:31 Speaker 2: Ahora, ¿qué hacemos? Moven los encueles, ¿no? Este es el rojito.
+51:36 Speaker 1: ¿A dónde va?
+51:38 Speaker 2: 1,5. ¿Está por aquí, no? Y el otro, 3,5. ¿Por aquí? ¿No se mueve? Pasa. ¿Abre el negrito? No, está acá en el caso.
+52:00 Speaker 1: ¿Dónde? Seis como seis.
+52:02 Speaker 2: Seis como seis está más atrás. Aquí no.
+52:04 Speaker 1: Ya está.
+52:06 Speaker 2: Y el color delito. Dos diez.
+52:10 Speaker 1: Dos diez.
+52:12 Speaker 2: Exactamente.
+52:24 Speaker 1: Listo.
+52:27 Speaker 2: Ahora que hacemos?
+52:28 Speaker 1: Lo mismo. Una
+52:30 Speaker 2: instalación mas por favor. El punto A1, ¿a qué centroide le pertenece? A
+52:57 Speaker 1: U3.
+52:57 Speaker 2: U3. ¿Distancia? 0. ¿Distancia? Sí.
+53:05 Speaker 1: Listo.
+53:06 Speaker 2: ¿Está bien, no? El A2.
+53:15 Speaker 1: A U1.
+53:18 Speaker 2: ¿Distancia?
+53:34 Speaker 3: por dos por dos por dos por dos por dos por dos por dos
+53:41 Speaker 2: ¿cuánto es? raíz de?
+53:45 Speaker 1: raíz de dos por dos
+53:52 Speaker 3: raíz de cinco medios raíz de cinco medios
+54:11 Speaker 1: ¿Solo cuánto? ¿Solo
+54:16 Speaker 2: 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5?
+54:20 Speaker 1: ¿Solo 5? ¿Solo 5?
+54:25 Speaker 2: ¿Solo 5? ¿Solo 5? ¿Solo 5? ¿Solo 5?
+55:01 Speaker 3: Ahí la 3.
+55:04 Speaker 1: 2 raíz de 2.
+55:22 Speaker 2: U2, distancia?
+55:26 Speaker 1: Rayos de 5
+55:27 Speaker 3: Rayos de 5 Rayos
+55:29 Speaker 1: de 5 Rayos de 5
+55:31 Speaker 2: Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5
+55:34 Speaker 1: Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 5 Rayos de 6 Rayos de 5 Rayos de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos
+55:46 Speaker 3: de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos de 6 Rayos
+55:46 Speaker 2: de 6 Rayos de
+55:50 Speaker 1: 6 Rayos
+56:59 Speaker 3: sería A2 y A7
+57:10 Speaker 1: A 3, a 4, a 5, a 6.
+57:13 Speaker 2: A 3, ¿no? Sí. A 3, a 4, a 5, a 6. Y a 6. ¿Listo? Este te voy a mejorar, ¿no?
+57:25 Speaker 1: A 8. ¿A? Bueno, a 1 y...
+57:32 Speaker 3: A 1 y... A 8.
+57:34 Speaker 2: ¿Listo? ¿Listo? Calculamos los entrares y pasamos a lo que sigue. El nuevo Centroide para...
+57:45 Speaker 1: 1, 2,
+57:51 Speaker 2: 3,
+57:58 Speaker 1: 4, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3,
+58:14 Speaker 3: 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2 Es el mismo. Creo que es Profet 3,9.5
+59:22 Speaker 1: ¡Gracias!
+59:53 Speaker 3: 5.25
+59:55 Speaker 2: use
+01:00:04 Speaker 1: cerebro
+01:00:06 Speaker 3: use cerebro
+01:00:12 Speaker 1: 5.25.
+01:00:13 Speaker 2: Listo.
+01:00:14 Speaker 1: 5.20.
+01:00:16 Speaker 2: Ok, lo bueno que se me pruebe es que voy a bajar a mí.
+01:00:19 Speaker 1: Aquí está acá. Ahí es. Vamos a verlojito. Vamos a verlojito. Vamos a verlojito. 3
+01:00:26 Speaker 2: con... Y bueno, así tenemos... Podríamos decir, ¿no? Creo que este es un clúster. Creo, estoy diciendo, este es otro clúster.
+01:00:42 Speaker 1: Y este es otro clúster, ¿no? Entonces, este
+01:00:48 Speaker 2: es el algoritmo de camiones. Simple, ¿no? En los cálculos no hay mucho que hacer. Solo hay que tener cuidado en la inicialización de los centros. Y principalmente decir, oye, ¿cuántos clústeres quieren? Ese es un problema.
+01:01:15 Speaker 1: Un
+01:01:15 Speaker 2: problema para el camis es que tú le des el número adecuado del clúster. Si no damos eso, nos va a dar el resultado. Internamente al algoritmo no hay complejidad, ¿no?
+01:01:31 Speaker 1: Voy a
+01:01:37 Speaker 2: corregir esto, porfa. ¿Quién es el delegado?
+01:01:43 Speaker 1: Voy a subir
+01:01:47 Speaker 2: mañana al mediodía.
+01:01:53 Speaker 1: para no
+01:01:54 Speaker 2: olvidarme es
+01:01:56 Speaker 1: que
+01:01:58 Speaker 2: no sé todo lo comunitario contigo Bueno, esta es la solución de una primera instalación. Siguiente modelo. Plastering
+01:02:30 Speaker 1: ¿Qué es?
+01:02:32 Speaker 3: Jerárquico. Tres y media. Voy a repetir dos líos.
+01:02:35 Speaker 2: Cláser y jerárquico.
+01:02:37 Speaker 3: ¿Qué prototypes?
+01:02:39 Speaker 2: Tanto el anterior algoritmo como el castellín jerárquico son
+01:02:42 Speaker 1: denominados... ¿No?
+01:02:45 Speaker 2: Porque para decir, oye, ¿qué punto está más próximo del otro y por ahí me forma un poquito? Tengo que calcular distancias. Cualquier tipo de distancias. Pues en este caso ocurre lo mismo. ¿Vale? Y el resultado sabe un poquito. Esta figura que ven se
+01:02:58 Speaker 3: llama... Dentograma. Dentograma.
+01:03:07 Speaker 2: ¿Cuántos clastos crees que hay en esta representación?
+01:03:27 Speaker 3: ¿Por qué tres?
+01:03:31 Speaker 2: Porque hay tres colores.
+01:03:34 Speaker 1: No es tanto la forma de
+01:03:36 Speaker 3: visualizar. El corte. Si tienes un corte.
+01:03:39 Speaker 2: Exactamente. Aquí la pregunta es ¿Qué
+01:03:41 Speaker 3: nivel? La respuesta es depende.
+01:03:45 Speaker 2: ¿Depende de qué? Donde tú Estableces el corte. O el corte. O sea, yo quiero cortar aquí. ¿Cuántos clústeres habría?
+01:03:56 Speaker 3: Uno, dos, tres, cuatro.
+01:04:00 Speaker 2: ¿Y si quiero cortar aquí?
+01:04:03 Speaker 3: Uno, dos, tres, cuatro, cinco, seis, siete.
+01:04:06 Speaker 2: Entonces va a depender de eso.
+01:04:08 Speaker 1: ¿Vale?
+01:04:09 Speaker 2: Del corte que nosotros realicemos.
+01:04:12 Speaker 1: ¿Vale? Del
+01:04:13 Speaker 2: corte que nosotros realicemos. Ok, entonces ahora vamos a ver este algoritmo. Nuevamente, a ver, vamos con la intuición y ustedes entre todos sacamos.
+01:04:25 Speaker 1: Ok, please.
+01:04:28 Speaker 2: Ahí está el algoritmo. ¿Qué está haciendo primero? Paso 1. ¿Qué crees que está haciendo el algoritmo de clase en general para encontrar los clásicos? A ver, esperemos ahí y vamos a ver.
+01:06:05 Speaker 1: Paso 1. Agrupa los datos más cercanos.
+01:06:10 Speaker 2: Agrupa los datos más cercanos. ¿Cómo determino si un dato está más cercano al otro dato? ¿Qué hago? ¿Qué calculo?
+01:06:18 Speaker 3: Distancias. Distancias, ¿no es cierto?
+01:06:20 Speaker 2: Por eso todos estos algoritmos están... Bueno, principalmente los dos primeros son los pasados en distancias. Listo. Entonces, calculamos las distancias. ¿Cómo yo digo que un punto está muy cerca de otro punto? Para decir eso, con certeza tengo que hacer el cálculo de todos, con todos, entre todos, con todos. ¿No es cierto? Listo. Y una vez que determino que esos dos puntos son... Están próximos uno con el otro. ¿Qué crees que se están haciendo? Disculpa que lo señale, por favor, de esos nombres. Vale, vale, vale. Tiene que ver con eso.
+01:07:18 Speaker 1: ¿Ya?
+01:07:20 Speaker 2: Y después de hacer ese agrupamiento...
+01:07:24 Speaker 1: No,
+01:07:26 Speaker 2: ahí lo encontré mejor, lo agrupó. Después lo está agrupando con el siguiente próximo. Después... Claro, ¿no? En cuanto a los próximos, los más próximos próximos, lo conviene en uno. Listo, después sigo buscando aquellos otros dos que son más próximos, ¿no? En resumen aquí, ¿qué estamos haciendo en todas las iteraciones? Encontrando los puntos que están más cerca uno del otro. Primer paso, obviamente va a haber un punto o dos puntos que estén próximos uno del otro. Eso se convierte en un único punto. Ahora, calcularé que ese único punto con respecto a este, a este, a este, entre todos nuevamente y encontraré los nuevos dos puntos más próximos. ¿Y qué hago?
+01:08:19 Speaker 1: Los uno.
+01:08:22 Speaker 2: Sí, por eso aquí miramos.
+01:08:25 Speaker 3: ¿Siempre se agrupa en pares de dos?
+01:08:27 Speaker 2: Buena, buena pregunta. Típicamente sí. Típicamente sí, pero justo en el tiempo vamos a ver cómo siempre cumple. Pero quiero hacer grey. ¿O sea ya es grey?
+01:08:42 Speaker 1: Gracias. Si hay dos puntos.
+01:09:01 Speaker 2: Inicialmente cuando no había casi no. Cuando no es un punto, casi no es un problema. Pero ahora esto ya formó un punto. Los dos forman un punto. ¿Cómo creceré este nuevo punto P7
+01:09:11 Speaker 1: con respecto a las demás? No, esto se entró bien.
+01:09:15 Speaker 2: Ya, eso sería una idea. O... Ya ya está. En esta deportiva muestra eso. Tú puedes elegir al menor.
+01:09:28 Speaker 1: ¿Ya?
+01:09:29 Speaker 2: Hablando en distancias. Al mayor o puedes promediar. ¿Listo? Puedes promediar o técnicamente agarrar al centro y de los otros puntos. Entonces de esa forma vas calculando las nuevas distancias. Entonces a esa función se le llama función
+01:09:47 Speaker 1: de enlace.
+01:09:49 Speaker 2: O sea, no hay más ahí. Una vez que aglomeas los puntos, tienes que utilizar alguna función de enlace para calcular las distancias. Puedes tomar el menor, el mayor, el
+01:09:58 Speaker 1: promedio. o al
+01:10:01 Speaker 2: máximo.
+01:10:02 Speaker 1: Listo.
+01:10:10 Speaker 2: Y con eso podemos tener listo nuestro algodito. Ok, ya lo vamos a hacer entre tres. No
+01:10:18 Speaker 1: se olviden por favor.
+01:10:24 Speaker 2: Ah bueno, algunos aspectos también. Nos enfocamos aquí en la comparación con cabines. Al igual que, a diferencia de cabines, aquí necesito definir el número de clúster de antemano. No, no necesitas definir cuántos
+01:10:45 Speaker 3: clases.
+01:10:47 Speaker 2: ¿Cuándo voy a tomar esa decisión? Cuando ya tengo el programa y utilizo algún límite, algún trecho de corte para decir yo quiero hacer dos, tres, cuatro
+01:10:57 Speaker 1: clases.
+01:10:58 Speaker 2: Después, otro detalle adicional aquí. también se puede aplicar análisis de las siluetas. Pero ojo, aquí estoy aplicando análisis de las siluetas, no para encontrar el nuevo decreto, porque este algoritmo no lo necesita, sino... para evaluar la calidad de los clásteres. Vamos a utilizar esa primera métrica, el de la silueta, para evaluar la calidad de nuestros clásteres.
+01:11:28 Speaker 1: La curva
+01:11:33 Speaker 2: S.
+01:11:36 Speaker 1: La de codo.
+01:11:42 Speaker 3: Diagrama de codo. Ah,
+01:11:44 Speaker 2: diagrama de codo esto. Listo. ¿Qué pasa aquí? Ahora sí, ejercicio. Este mismo ejemplo, ahora lo vamos a resolver utilizando clase literaria. Ok, yo no le quede aquí. Paso 1.
+01:12:41 Speaker 1: Antes calcular la distancia, ¿no? Listo,
+01:12:44 Speaker 2: calculemos la distancia. Le voy a dibujar aquí, mamá, aquí.
+01:12:50 Speaker 1: A 1, a 2, a 3, a
+01:12:55 Speaker 2: 4,
+01:12:56 Speaker 1: a 5, a 6,
+01:13:00 Speaker 2: a 7 y a 8. del punto A1 al punto A1
+01:13:31 Speaker 1: 0
+01:13:33 Speaker 2: y 0 distancia ampliando, ya vamos a la distancia de
+01:13:41 Speaker 1: A1 a 2
+01:13:47 Speaker 2: ¿Cinco? Aquí ustedes vamos a hacer los cárceles precisos. Lo que necesitamos encontrar... ¿Cinco? A uno, a tres.
+01:14:10 Speaker 1: 6 raíz de 2.
+01:14:11 Speaker 2: 6 raíz de 2? Si. Ok. 6 raíz de 2.
+01:14:18 Speaker 1: 4, 9, 10. 4, 10,
+01:14:25 Speaker 3: 11, 12, 13. Raíz de 13. Raíz de 13.
+01:14:31 Speaker 2: Raíz de 13. 5,
+01:14:44 Speaker 1: no hay de 2 6, 4 es 3, 2 2 raíz de 3 2 raíz de 3 2 raíz de 13 2 raíz
+01:15:40 Speaker 2: de 13 2
+01:15:42 Speaker 1: raíz de 13 1,
+01:15:50 Speaker 2: 7
+01:16:05 Speaker 3: Raíz de cuánto? 65. Raíz de 65. 5, 5
+01:16:24 Speaker 2: 3,
+01:16:36 Speaker 3: 4, 5, 6, raíz de 37 3
+01:17:01 Speaker 1: raíz de 2 3
+01:17:03 Speaker 3: raíz de 2 3 raíz de 2 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz de 10 2
+01:18:08 Speaker 1: raíz de 10 2 raíz de 10 2 raíz de 10 2 raíz
+01:18:11 Speaker 3: de 10 2 raíz de 10
+01:18:13 Speaker 1: 2 raíz de eso es cero
+01:18:41 Speaker 2: 3,4 3
+01:18:44 Speaker 3: ,4 3 ,4 3,4 3 ,4 3 ,4 3,4 3 ,4
+01:19:04 Speaker 2: Dos. Tres, siete. Cuánto?
+01:21:52 Speaker 3: 45 más 4. ¿Es la primera vez? Ah, no. 45,
+01:21:57 Speaker 1: 44 veces. 3,
+01:22:00 Speaker 2: 4,
+01:22:02 Speaker 3: 5, 6, 36 más
+01:22:04 Speaker 1: 9.
+01:22:08 Speaker 2: 5, 8.
+01:22:14 Speaker 3: Tazando el cerebro por aquí
+01:22:16 Speaker 1: Otro
+01:22:39 Speaker 3: más Reyes de 29
+01:22:46 Speaker 2: Seis como ocho
+01:23:39 Speaker 1: 58, ¿no? ¿Qué?
+01:23:42 Speaker 3: 3, 4, 5, 6, 7.
+01:23:45 Speaker 1: 65. No, más 9 es. 58.
+01:23:54 Speaker 3: 58. 58. Ahí tienen lentes.
+01:24:01 Speaker 2: Listo.
+01:24:04 Speaker 1: 58
+01:24:05 Speaker 2: y es 100. Hemos hecho el primer paso. Es de la primera fila, de la segunda fila. Es independiente de las filas. Por eso hemos hecho la intuición, ¿no? Aquí, como posiblemente puede haber empatez, es lo más en orden posible. ¿No? Pues el primero, ya.
+01:24:52 Speaker 1: O sea, el primero, rey de dos.
+01:24:54 Speaker 2: A tres y a cinco. A
+01:24:58 Speaker 1: tres y a cinco.
+01:25:06 Speaker 2: Listo, acá hay algo interesante. ¿Vale? A3
+01:25:14 Speaker 1: con A7.
+01:25:16 Speaker 2: Este va a ser el punto A9. ¿Vale? Para decir la secuencia, ¿de acuerdo? Tienes que calcular las distancias.
+01:25:27 Speaker 1: Listo.
+01:25:29 Speaker 2: Entonces estamos uniendo A3 con A5. ¿Con qué distancia? Raíz de 2. Ok. Entonces es raíz de 2.
+01:25:38 Speaker 1: ¿Esto? Sí.
+01:25:39 Speaker 2: Ok, lo voy a poner así.
+01:25:42 Speaker 1: Nos
+01:25:43 Speaker 2: construíamos en el 2 gramos,
+01:25:45 Speaker 1: ¿no?
+01:25:52 Speaker 2: Listo, lo que estamos haciendo aquí, en el eje X, van a estar las distancias. Aquí estamos dando como está, con menos X. ¿Qué puntos estamos subiendo? Estas son las distancias. Voy a poner aquí, cada uno de ellos es una unidad. ¿Cuál era la licitación?
+01:26:17 Speaker 1: ¿Cómo fue? Ok,
+01:26:21 Speaker 2: uno va por aquí, ¿no?
+01:26:24 Speaker 1: 1.41,
+01:26:25 Speaker 2: ¿no? Sí, es 1.41, ¿no? ¿Qué no pasa? ¿Estamos contiendo?
+01:26:32 Speaker 1: ¿Se
+01:26:32 Speaker 2: toca? Ojo, estos dos, ahora al 3 y 5 es al 9, ¿no es cierto? Nuevo punto. Entonces, a
+01:26:56 Speaker 1: ocho y a cuatro. ¿O te vamos a continuar con la nueve?
+01:27:00 Speaker 2: No, no, no. Si la nueve es el menor, sí. A ocho y a cuatro. A ocho y a cuatro, vale. ¿Nos podemos seguir un poquito con la figura?
+01:27:14 Speaker 1: A cuatro,
+01:27:17 Speaker 2: ¿cómo? A ocho.
+01:27:20 Speaker 3: ¿Distancia?
+01:27:34 Speaker 2: A
+01:27:35 Speaker 1: 5 y a
+01:27:38 Speaker 3: 6. A 9 y a 6.
+01:28:00 Speaker 1: La distancia es 0.5. Confía.
+01:28:08 Speaker 2: A3, A5 para nosotros. Entonces, tiene que unirse con esto. ¿No es cierto? ¿Con quién?
+01:28:16 Speaker 1: Con A6. Ok.
+01:28:19 Speaker 2: Ojalá. Si no, no vemos. ¿Listo? ¿Distancia? 0.5
+01:28:34 Speaker 1: Eso era 0.41 y el otro 0.5. Porque raíz de 2 es 0.41. Y la distancia es 0
+01:28:44 Speaker 2: .5. Ah, 1.41. Raíz de 2 cuánto es? 1.41. Por eso, raíz de 2 es 1.41. Este no puede ser 0.5. Este hubiera sido el primer punto a unir.
+01:29:03 Speaker 1: También sería raíz de 2. También
+01:29:05 Speaker 2: sería raíz de 2. ¿Por qué sería
+01:29:08 Speaker 1: raíz de 2? Porque no es un nuevo punto en la 9. ¿Cómo? El 9 no es un nuevo punto al medio de A. Pero el 9 es igual.
+01:29:16 Speaker 2: Sí. Exactamente. Recuerda, hay dos puntos. ¿Cuál
+01:29:21 Speaker 1: uso? El menor. Este era nuestro
+01:29:23 Speaker 2: criterio. Entonces, también es... Este detalle va a ocurrir cuando tenemos sentados, solo en esa situación.
+01:29:44 Speaker 3: ¿Qué sería la 11? Ah,
+01:29:47 Speaker 2: exactamente. ¿Cuál sería ocurrir? Sí.
+01:29:57 Speaker 1: Ah, lo hubiera hecho más chiquito. Es que falta el 4. ¿Dónde sería 8? 4
+01:30:06 Speaker 2: con él. O 10. 8. Ese es a 10.
+01:30:11 Speaker 3: A 10.
+01:30:13 Speaker 1: Gracias. A 10 con A1.
+01:30:20 Speaker 2: A 10 con A1. ¿Con quién? A1. ¿La distancia? 25.
+01:30:45 Speaker 1: ¿Cuánto es? 2.73.
+01:30:50 Speaker 2: ¿2
+01:30:51 Speaker 1: con?
+01:30:51 Speaker 2: 1, 2, 4, 4, 4.
+01:31:01 Speaker 1: ¿Listo?
+01:31:03 Speaker 2: ¿Todo eso sería?
+01:31:23 Speaker 1: El 10 con el 1.
+01:31:25 Speaker 2: 10 con el 1.
+01:31:26 Speaker 1: Ok.
+01:31:27 Speaker 2: Y sería esto, ¿no? Nada más. ¿Y ese sería? A 2. A 2.
+01:31:36 Speaker 1: Ok.
+01:31:38 Speaker 2: Continuamos, Juan.
+01:31:41 Speaker 1: A 7 y a 2. A 2 con 2. A 7 y a 2.
+01:31:47 Speaker 2: ¿Qué punto asumimos?
+01:31:49 Speaker 1: A 7 y a 2.
+01:32:00 Speaker 2: A7 y A2. A7 y A2. A7 y A2. ¿Con qué distancia? A7. A2 con A7.
+01:32:16 Speaker 1: 3 .16.
+01:32:18 Speaker 2: 3.16.
+01:32:24 Speaker 1: Listo.
+01:32:29 Speaker 2: A2 con A7.
+01:32:34 Speaker 1: Esto
+01:32:35 Speaker 2: para nosotros sería A3. ¿A dos con quién?
+01:32:57 Speaker 1: A dos. ¿A dos? ¿A dos? ¿A dos? ¿A dos? ¿A dos? ¿A
+01:33:07 Speaker 2: dos? ¿A dos? ¿A dos? ¿A dos? ¿A dos? ¿A dos? ¿A dos? ¿A dos?
+01:33:09 Speaker 1: ¿A dos? ¿A dos?
+01:33:10 Speaker 2: ¿A dos? ¿A
+01:33:13 Speaker 1: dos?
+01:33:26 Speaker 2: ¿Cuál es el menor porfa? ¿Quién es 11? A 3, 5, 6. 3, 5, 6. Pesa 11. ¿Con quién?
+01:33:53 Speaker 1: Con A2 y 2.
+01:33:55 Speaker 3: 1, 8 y 10.
+01:33:57 Speaker 2: ¿1 y 8? ¿Este? Sí. ¿Distancia? 3,
+01:34:00 Speaker 1: 3, 4. Raíz de 3, 3. ¿Cuánto es eso? 3, 100.
+01:34:06 Speaker 2: ¿Qué necesitamos? Para decirlo primero vamos a...
+01:34:10 Speaker 1: 3, 6. 3, 6.
+01:34:14 Speaker 2: 1, 2, 3, 6. Pasando por la mitad.
+01:34:23 Speaker 1: Y ahora,
+01:34:24 Speaker 2: obviamente solo queda esto, ¿no? Díganme la distancia, por favor. Una, dos, tres. ¿Cuánto? ¿Cuánto? ¿Cuánto? Entonces, una vez que tengamos el desnograma, simplemente vamos a extraer nuestro umbral y decirlo. ¿Cuántos clusters tenemos? Pregunta, a ver dónde quedé contigo. Es el mismo ejercicio, ¿no? Cuando hemos hecho el camins, era tres. Y estos eran los tres clusters, ¿no? Uno,
+01:35:45 Speaker 1: dos
+01:35:45 Speaker 2: y tres. Entonces, más o menos, ¿dónde debo cortar para obtener tres clusters? Cabe, esto es una unidad. ¿Cuánto? Un poquito debajo de la unidad. 1, 2, 3, 3, 4, 5. 1, 2, 3, 3, 4, 5. 1, 2, 3, 3, 4, 5. ¿Tres clases?
+01:36:11 Speaker 1: Sí, ¿no? ¿Tres clases?
+01:36:13 Speaker 2: ¿Tres clases? ¿Tres clases? ¿Tres clases? ¿Tres clases? ¿Tres
+01:36:15 Speaker 3: clases? ¿Tres clases?
+01:36:19 Speaker 2: La forma más sencilla es con la intersección. ¿Qué te refieres a esto? Claro. No, toca el este... Depende de lo que tú quieras. Exactamente.
+01:36:35 Speaker 3: Profe, ¿no deben ser simétricas las divisiones?
+01:36:38 Speaker 2: ¿A qué te refieres a esto? Sí. Sí, esto debe ser ordenado, debe ser a uno, a dos, a tres, a cuatro. Pero como nosotros tenemos empates, entonces se nos ha hecho siempre. Verifiquemos, por favor. Dice que un clúster es a 3,
+01:36:55 Speaker 1: 5 y 6.
+01:36:57 Speaker 2: ¿Cumple? ¿Sí, no? Sí. Después el otro,
+01:37:03 Speaker 1: 1,
+01:37:05 Speaker 2: 4, 8.
+01:37:06 Speaker 1: ¿Cumple? ¿Vale?
+01:37:08 Speaker 2: Cumple. Y el otro,
+01:37:09 Speaker 1: 2, 7. Es lo mismo que el clúster.
+01:37:11 Speaker 3: Es lo mismo que el clúster.
+01:37:13 Speaker 2: A menos sean resultados.
+01:37:18 Speaker 1: ¿Qué pasa?
+01:37:46 Speaker 2: El último algoritmo que vamos a ver, ¿qué necesita? El
+01:37:52 Speaker 3: laboratorio.
+01:37:56 Speaker 2: El DevScan. Vayamos con la intuición medio ambiente, eso es más
+01:38:02 Speaker 1: sencillo.
+01:38:05 Speaker 2: ¿Listo?
+01:38:06 Speaker 1: Ustedes me gustan.
+01:38:10 Speaker 2: Identifiquen posibles parámetros también. Exactamente, es un parámetro. Tú le dices, oye, si va a haber un clúster, ese clúster como mínimo debe tener tantos puntos. Si no cumple, no puede ser clúster. Es una primera condición. ¿Qué crees que sea de color? Cuando la S es Epsilon, ¿qué significa en todos los sitios? ¿El radio? ¿Sí? ¿El radio? No hay nada. Hay un punto hacia el círculo, lo marca, lo marca a los vecinos.
+01:39:59 Speaker 1: La cantidad de puntos que puede elegir. No sé, no sé. Sóplame, sóplame.
+01:40:16 Speaker 2: Aquí, en los devscans, no hay la idea de cantidad de cuadros. El algoritmo solito te dice, oye, en cuanto a 5. De acuerdo siempre con los parámetros. Pero tú no le dices explícitamente, oye, yo quiero ocho clases. No, tú no le dices el número de clases. No le das ese parámetro. Y ahora sí. Paso uno, como siempre. Paso uno. ¿Qué está haciendo? Ya, ahí está.
+01:40:47 Speaker 3: Es el paso uno.
+01:40:50 Speaker 1: Agarra un punto aleatorio.
+01:40:52 Speaker 2: Exactamente. Agarra un punto aleatorio. Paso uno, agarra un punto aleatorio. Paso dos, una vez que encuentre el punto aleatorio,
+01:41:02 Speaker 1: ¿qué está haciendo?
+01:41:09 Speaker 2: ¿Y cómo sé quiénes están cercanos? ¿Quién me da esa información de cercanía? ¿Quién me da esa información de cercanía? ¿Quién me da esa información de cercanía?
+01:41:15 Speaker 1: ¿Quién me da esa información de cercanía? ¿Quién me da esa información?
+01:41:31 Speaker 2: Listo. Una vez que elija un punto cualquiera, aplico el éxilo, que básicamente es el radio, y observo cuántos puntos están dentro de la circunferencia que se forma con este radio éxilo.
+01:41:47 Speaker 1: Listo.
+01:41:48 Speaker 2: Si la cantidad de puntos supera al mínimo de puntos, Ese puede ser un rato. Y si no supera, a ver, ¿qué ocurre cuando no supera? Es
+01:42:03 Speaker 3: una playa, ¿no? Es una playa, podría ser. Se marca como rueda.
+01:42:08 Speaker 2: Se marca como rueda. Se marca como rueda. Y ya está. Y de esta forma vas iterando. Y de esta forma vas iterando. Por ejemplo, aquí no cumple, ¿no? Elijo un punto, hago la circunferencia con él, si lo uno, no, solo hay tres puntos, mínimo me piden cuatro puntos, tú no puedes ser un clase. Y eso lo está representando con el color gris. El resultado final, color gris. Aquí tenemos clases de puntos azules. Ahí está haciendo nuevamente ese cálculo. Aquí he dicho otro punto. Radio no cumple. Lo marco como outlayer. Otro punto no cumple. Lo marco como outlayer. Otro punto tampoco cumple, ¿no? Como outlayer. Este sí cumple, mínimo cuatro, y después vamos iterando sobre lo mismo. Y ya está. El algoritmo de debe estar. Ahora vamos a ver las cosas, los fundamentos,
+01:43:23 Speaker 1: y cómo se estamos terminando.
+01:43:31 Speaker 2: Ahí estamos. La definición. Este método se suele llamar basado en densidades. Método basado no en distancias, sino en densidades. Identifica clústeres de forma arbitraria. Tú no le dices cuántos clústeres. El resultado del algoritmo como tal ya es el número de clústeres. ¿Cómo se llama el punto que nosotros seleccionamos y al trazar el radio hay puntos que superan el mínimo de puntos? Se nos suele llamar co. En los otros casos era centro y en otros casos era co. Y aquellos que no cumplen, hago la circunferencia, no cumplen con el mínimo de puntos, fluido. Entonces, ahí está, éxilo mes de radio, el punto de la circunferencia se le llama cor, y obviamente los puntos que están justo al borde de la circunferencia formada por éxilo, son los puntos de borde. Ventajas de este algoritmo.
+01:44:39 Speaker 1: robusto
+01:44:40 Speaker 2: ante el
+01:44:41 Speaker 1: ruido.
+01:44:42 Speaker 2: ¿Por qué? Porque detecta el ruido. Mismo naturaleza del algoritmo, detecta el ruido.
+01:44:53 Speaker 1: Sí,
+01:44:58 Speaker 2: genial. Ahorita les voy a dar una imagen para complementar lo que me estás comentando. Volvemos aquí. Listo, aquí tienen un poquito más de los ejemplos, sobre todo de los parámetros, por favor, ya conocemos. Tiene muchos parámetros, pero los más principales son el silón, para formar la circunferencia y el figma de puntos que debe tener el presionario. Nos saquito los datos originales, y después de aplicar el algoritmo de Debesga, antes. ¿Cuántos clases se observa ahí en los puntos en las filas?
+01:45:38 Speaker 1: ¿Seis?
+01:45:51 Speaker 2: ¿Este podría ser uno?
+01:45:57 Speaker 1: ¿Sí?
+01:46:00 Speaker 2: ¿Y este de aquí otro, no? ¿Podría ser esta así? En todo caso, esta sería así. Esta es una de las desventajas de este algoritmo, todo funciona como debería.
+01:46:18 Speaker 1: ¿Cómo debería funcionar?
+01:46:20 Speaker 2: Este algoritmo es altamente sensible a esos dos parámetros, sobre todo al éxilo. ¿Ya? Sobre todo al éxilo. Nosotros podríamos definirlo así. Al éxilo como 0.1, hacemos un cálculo, y después, mira, solo voy a hacer eso. Éxilo va a ser igual a 0.1, o sea, algo así. Y ya se rompe todo. O sea, los clústeres que le va a dar ya
+01:46:45 Speaker 1: son otros.
+01:46:46 Speaker 2: Es muy sensible a este parámetro. Es muy sensible a este parámetro. Por eso aquí observan esto. ¿Cuántos clústeres observan aquí? ¿Qué es el resultado de aplicar el debescan?
+01:47:01 Speaker 1: ¿Cuántos?
+01:47:09 Speaker 2: ¿Cuántos clústeres?
+01:47:15 Speaker 1: ¡Oh no! ¡Oh no! ¡Oh no!
+01:47:24 Speaker 2: Exactamente, los demás están en el límite, de repente cuando interen más esos del límite, se convierten en verdes, los rojos que ya definitivamente son los del límite. Miren, del scan le ha aplicado un clúster, eso no tiene sentido, ¿no? ¿A qué hay más clúster? ¿Por qué no? Terminadamente por esto de los parámetros de él. Muy sensible a eso.
+01:47:50 Speaker 1: Mientras se
+01:47:51 Speaker 2: va ejecutando eso, hay una mejora al algoritmo de DEMScan. Y justamente esa mejora evita eso. Dice, como el ente no es tan problemático, es muy sensible, entonces quitemos eso. Y ese algoritmo se llama H
+01:48:10 Speaker 1: -DEMScan.
+01:48:20 Speaker 2: Entonces ese algoritmo ya no tiene el hecho en eso. Y como ya funciona mejor, es más rápido,
+01:48:28 Speaker 1: es mucho más rápido. Va a usar
+01:48:47 Speaker 3: las neuronas.
+01:48:53 Speaker 2: Vamos a ver justamente la influencia
+01:48:56 Speaker 1: entre H... Ok. ¿Cuál es el tema?
+01:49:15 Speaker 3: Cuatro y media. Cuatro y media. ¿Cuatro y media?
+01:49:19 Speaker 1: Vale.
+01:49:22 Speaker 2: ¿Cómo que
+01:49:23 Speaker 1: Epsilon 2 y también raíz de 10? ¿Qué?
+01:49:26 Speaker 2: Sí, recuerda lo que estaba comentando, que este algoritmo es altamente sensible a los valores que tú le das a Epsilon. O sea, quiere ejerciciar justamente para mostrar eso, ¿no? Oye, ¿qué pasa si hacemos el caldo con Epsilon 2 y tenemos un plástico? reyes de 10, uy, ya cambié el clúster.
+01:49:45 Speaker 1: Por
+01:49:46 Speaker 2: el tiempo ya les muestro la solución.
+01:49:49 Speaker 1: Ahí está. Miren,
+01:49:55 Speaker 2: con el xilón 2, ¿cuántos clústers? Dos. ¿Cuántos sublayer?
+01:49:59 Speaker 1: Dos. ¿Y con el otro? No, tres sublayer.
+01:50:02 Speaker 2: Ah, este, ¿no? ¿Y con el xilón reyes de 10? Ninguno sublayer. Lo que les decía. O sea, tú mueves un poquito este xilón y las cosas cambian.
+01:50:13 Speaker 1: O sea, Pero si ya hago eléxido muy grande, entonces tendría un plástico.
+01:50:19 Speaker 2: Pero tener un plástico no tiene sentido, no hago plástico.
+01:50:21 Speaker 1: Claro, hay que ver que no sale tan chico. Sí.
+01:50:25 Speaker 2: Por eso les decía, una mejora de eso es el HDVSK, donde ya no hay éxilo. Tú solo le dices, yo quiero que los plantes se formen, como mírenlo, con tantos formas. ¿Ya está? Te olvides del éxilo. Entonces, miren, aquí tengo otra figura, justo para lo que les decía. Miren, para complementar, miren,
+01:51:12 Speaker 1: si nosotros no controlamos bien los parámetros, miren lo que ocurre.
+01:51:16 Speaker 2: Va a tender a que todos los puntos estén en el borde, o lo de gris es auraya. Son muy sencillas. El algoritmo es muy sencillo. Mejor usen el HD descante y a cierto
+01:51:30 Speaker 1: punto mejor es el descante.
+01:51:51 Speaker 2: Listo, ¿ok?
+01:51:52 Speaker 1: Entonces queda
+01:51:53 Speaker 2: claro ahí la... Una comparación, ¿no? Esta es la que les hay que poner, ahí tienen muchos más algoritmos, cada uno con sus propias ventanas. Por ejemplo, para este tipo, creo que los basados en densidades funcionan mejor, ¿no?
+01:52:13 Speaker 1: Y
+01:52:14 Speaker 2: los que fallan oportunamente son los encarnes, ¿no? Por la distancia, como tengo que calcular distancias, se falla. Y la H, funciona mejor. Pregunta, a ver, por ahí nos conecta. ¿Cuál de sus algoritmos creen que, viendo obviamente los puntos, los resultados, funcionan mejor?
+01:52:39 Speaker 1: No depende.
+01:52:42 Speaker 2: No, por eso. Nuestro objetivo es hacer un rango. Aquí te engana el camino. Aquí te engana el camino. Aquí te engana el camino. Aquí te engana el camino. Aquí te ve el camino. Claro, al final decir... Podría ser interesante el mismo problema. Y además,
+01:53:09 Speaker 1: ¿se ven bien? Sí, tomen
+01:53:12 Speaker 2: en cuenta ese detalle, porque de nada me sirve que me clasterice bien si se demora horas, en comparación con lo que se demora segundos. No, ya, vamos por filas. ¿Aquí quién gana?
+01:53:38 Speaker 1: Para mí el Debson.
+01:53:40 Speaker 2: ¿Debson? Primero porque se claseriza bien y además el tiempo es reducido. Entonces, ¿es que no? ¿En
+01:53:49 Speaker 1: el segundo? No sería mejor marcarlo en la fila, porque no arriba. ¿También?
+01:54:07 Speaker 2: Falla, falla, falla, falla. Bueno, no falla, pero es un segundo. Falla, falla. ¿Debe estar también? Ahorita vamos a saber dónde está el disco.
+01:54:18 Speaker 1: Next. Siguiente.
+01:54:25 Speaker 2: Aquí creo que debería haber camis.
+01:54:27 Speaker 1: El mini watch camis.
+01:54:29 Speaker 2: Sí, no, camis, ¿no?
+01:54:32 Speaker 1: Next. ¿El HDBSCAN?
+01:54:42 Speaker 2: No.
+01:54:43 Speaker 1: El HDBSCAN. No. El HDBSCAN.
+01:54:45 Speaker 2: Falla, ¿no? Falla, falla. El parte entre
+01:54:48 Speaker 1: HDBSCAN. ¿A ti está bien?
+01:54:50 Speaker 2: Dos segundos, 202. El parte entre
+01:54:53 Speaker 1: HDBSCAN y... ¿Espectral?
+01:54:56 Speaker 2: Y Lausia Pitch.
+01:55:00 Speaker 1: El
+01:55:02 Speaker 3: último. Hay varios buenos.
+01:55:13 Speaker 2: En la siguiente, aquí Camilcio. Es un típico escenario. Si tienen datos con esta discusión así, Camilcio le paga. ¿No es empate entre
+01:55:20 Speaker 1: Camilcio y Camilcio?
+01:55:22 Speaker 2: ¿Tiempo? Sí, por cualquiera de estos dos, ¿no? Parece muchísimo, su tiempo de ejecución también. Finalmente. Mira lo que pasa con los algoritmos
+01:55:35 Speaker 1: de las aves de la ciudad.
+01:55:39 Speaker 2: La cual ganó. ¿Esta por el tiempo? Sí. ¿Cuál es la fin de propaganda?
+01:55:54 Speaker 1: Aquí.
+01:56:02 Speaker 2: Sí, déjame recordar, creo que la
+01:56:04 Speaker 1: solución a esto sí es esta.
+01:56:06 Speaker 2: Aquí hay exactamente cuatro casos, ya no tres.
+01:56:10 Speaker 1: Entonces, en resumen, debemos
+01:56:13 Speaker 2: conocer nuestros datos para elegir adecuadamente el
+01:56:17 Speaker 1: modelo o el algodón.
+01:56:19 Speaker 2: Pero ahí podemos ya, ¿no? Oye, yo quiero empezar a experimentar, ¿con cuál? Ah, creo que nos podemos experimentar, ¿no? Una prueba preliminar y por ahí comentar esta, para ver cómo va. ¿De ahí? Las ecuaciones para calcular las métricas. Esto lo van a ver con un laboratorio. Igual, se está incluyendo las
+01:56:45 Speaker 3: ecuaciones.
+01:56:48 Speaker 1: Bueno,
+01:56:53 Speaker 2: ya nos retornamos las ecuaciones. Si les descone, el valor mínimo que toma es... Cero. ¿No? No es cero. Menos uno. Menos uno. ¿El máximo valor?
+01:57:06 Speaker 1: Uno. Uno.
+01:57:08 Speaker 2: ¿Qué significa que tome menos uno? ¿Está bien mis clústeres?
+01:57:12 Speaker 1: No.
+01:57:18 Speaker 2: ¿Listo? No hay fronteras donde el puntito no se sabe si va al clúster de la derecha o a qué clúster? ¿Uno?
+01:57:26 Speaker 1: Sí sabe.
+01:57:28 Speaker 2: Está perfectamente establecido, perfectamente listo. Y la otra métrica,
+01:57:38 Speaker 1: que es el índice del futuro.
+01:57:41 Speaker 2: También están las ecuaciones, bien definido, bien definido. Vamos a la interpretación. ¿Valor bajo? Los clústeres compactos y bien separados. Aquí, esta métrica inicia en cero y termina en... No se sabe nada. No se sabe nada. Entonces aquí nos interesa que estemos lo más cercano posible a esa cero. Si tenemos eso, clúster compactos y bien separados. Dentro del clúster, todos los puntitos están bien cohesionados, hay otra varianza, y también los clústeres con los puntos de otros clústeres están bien separados. No hay puntos en el medio que dicen, oye, aquí clúster clúster. Alto, totalmente distinto.
+01:58:25 Speaker 1: Y lo
+01:58:27 Speaker 2: ideal sería, casi que nunca he visto que llegue a
+01:58:30 Speaker 1: esa zona, en esa zona,
+01:58:32 Speaker 2: difícilmente en un escenario real. Bueno, sé que son marchistas.
+01:58:41 Speaker 1: Ok,
+01:58:42 Speaker 2: corresponde al proyecto.
+01:58:45 Speaker 1: ¿Cómo quedó bien? Por favor. Publicamos las invitaciones. Como temas, como
+01:58:54 Speaker 3: temas. Ok, dudas,
+01:58:57 Speaker 2: consultas, aparte del proyecto.
+01:58:59 Speaker 1: ¿No? ¿Queda claro?
+  
